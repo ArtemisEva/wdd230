@@ -1,5 +1,4 @@
 @media screen and (min-width: 500px) {
-
     body {
         font-family: 'Roboto', sans-serif;
     }
@@ -12,6 +11,12 @@
         border: 1px solid #bbb;
         padding: 1rem;
         background-color: #1567be;
+    }
+
+    header {
+        padding: 1rem;
+        color: #fff;
+        background-color: #000000;
     }
 
     main {
