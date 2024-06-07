@@ -1,0 +1,28 @@
+@media only screen and (min-width: 600px) {
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    .parent section {
+        box-shadow: 1px 1px 10px black;
+    }
+
+}
