@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 1;
     box-sizing: border-box;
 }
 
@@ -66,12 +66,14 @@ nav a {
     margin: 1rem 2vw;
 }
 
+
 .parent section {
     border: 1px solid #415541;
     background-color: #e9f5e9;
     border-radius: 10px;
     overflow: hidden;
     margin: 1rem 0;
+
 }
 
 .parent span {
@@ -80,8 +82,12 @@ nav a {
     display: block;
     text-align: center;
     padding: .75rem 0;
+
+
 }
 
 .parent p {
     padding: 10px;
+
+
 }
