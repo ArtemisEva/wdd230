@@ -15,6 +15,11 @@
         text-align: center;
     }
 
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
     .parent {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -25,4 +30,7 @@
         box-shadow: 1px 1px 10px black;
     }
 
+    .parent span {
+        font-size: 2rem;
+    }
 }
