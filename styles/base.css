@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 1;
     box-sizing: border-box;
 }
 
@@ -58,7 +57,6 @@ nav {
 
 nav ul {
     list-style-type: none;
-    display: flexbox;
     justify-content: space-evenly;
 }
 
@@ -78,7 +76,6 @@ nav a {
 
 a:hover {
     color: #060120;
-    justify-content: space-evenly;
 }
 
 a:visited {
