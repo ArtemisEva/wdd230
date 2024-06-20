@@ -51,17 +51,6 @@ nav {
     background-color: #080080;
     color: white;
     text-align: center;
-
-    a:hover {
-        border: 5px solid #000000;
-        color: #060120;
-        justify-content: space-evenly;
-    }
-
-    a:active {
-        color: green;
-    }
-
     background-color: #36454f;
     margin: 0 auto;
     max-width: 900px;
@@ -73,12 +62,35 @@ nav ul {
     justify-content: space-evenly;
 }
 
+ul:hover {
+    border: 5px solid #000000;
+
+}
+
 nav a {
     display: block;
     color: #fff;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+
+}
+
+a:hover {
+    color: #060120;
+    justify-content: space-evenly;
+}
+
+a:visited {
+    color: rgb(201, 154, 219);
+}
+
+a:visited:hover {
+    color: rgb(0, 0, 0);
+}
+
+a:active {
+    color: green;
 }
 
 .parent {
@@ -105,6 +117,8 @@ nav a {
 
 
 }
+
+
 
 .parent p {
     padding: 10px;
