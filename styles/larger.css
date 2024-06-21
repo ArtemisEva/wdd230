@@ -1,36 +1,41 @@
 @media only screen and (min-width: 600px) {
 
-    nav ul {
-        list-style-type: none;
+    header,
+    main {
         display: flex;
-        justify-content: space-evenly;
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-    header {
-        display: block;
-        text-align: center;
+        flex-direction: column;
     }
 
     #menu {
         display: none;
-        /* hide hamburger button */
     }
 
-    .parent {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 10px;
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
     }
 
-    .parent section {
-        box-shadow: 1px 1px 10px black;
+    header div {
+        margin-top: 5px;
+        flex-direction: column;
     }
 
-    .parent span {
-        font-size: 2rem;
+    main h1 {
+        text-align: center;
+        margin: 0px 5px;
+    }
+
+    main hr {
+        margin: 0px 5px;
+    }
+
+    main .block {
+        margin: 5px 5px;
+    }
+
+    footer {
+        text-align: center;
     }
 }
