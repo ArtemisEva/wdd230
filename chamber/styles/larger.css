@@ -1,0 +1,41 @@
+@media only screen and (min-width: 600px) {
+
+    header,
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    ul.navigation,
+    ul.navigation.open {
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+    header div {
+        margin-top: 5px;
+        flex-direction: column;
+    }
+
+    main h1 {
+        text-align: center;
+        margin: 0px 5px;
+    }
+
+    main hr {
+        margin: 0px 5px;
+    }
+
+    main .block {
+        margin: 5px 5px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
