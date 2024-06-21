@@ -10,6 +10,7 @@
         display: none;
     }
 
+
     ul.navigation,
     ul.navigation.open {
         display: flex;

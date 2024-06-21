@@ -8,10 +8,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-header,
+header {
+    background-color: rgb(48, 102, 219);
+}
+
 footer {
     background-color: rgb(26, 52, 107);
-    position: relative;
 }
 
 header div {
@@ -22,9 +24,10 @@ header div {
     padding: 10px;
 }
 
-.hero {
+#heroimage {
     align-items: center;
-    display: flex;
+    display: block;
+    margin: auto;
     max-width: 100%;
     height: auto;
 }
@@ -49,9 +52,11 @@ body.dark-mode a {
     background: transparent;
     border: none;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 2vw;
     cursor: pointer;
+    width: 44px;
+    height: 44px;
 
 }
 
