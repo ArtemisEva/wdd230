@@ -17,6 +17,18 @@
         font-size: 24px;
     }
 
+    .herolabel {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+
+    }
+
+    .herolabel h1 {
+        font-size: 6rem;
+    }
+
     header div {
         margin-top: 5px;
         flex-direction: column;

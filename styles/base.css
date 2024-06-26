@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -52,7 +54,44 @@ body.dark-mode a {
     top: 0;
     right: 2vw;
     cursor: pointer;
+}
 
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.herolabel {
+    position: absolute;
+    bottom: 70%;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    text-align: center;
+}
+
+.herolabel h1 {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: "Great Vibes", serif;
+    color: white;
+    text-shadow: 2px 2px rgb(87, 87, 87);
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 #menu {
@@ -82,8 +121,8 @@ ul.navigation.open {
 ul.navigation a:hover {
     background-color: rgb(26, 52, 107);
     border: 3px solid black;
+    color: rgb(0, 168, 8);
 }
-
 
 nav {
     background-color: rgba(0, 0, 0, 0.829);
@@ -166,6 +205,12 @@ main li {
 
 main li a {
     text-decoration: none;
+}
+
+.googlemap {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
