@@ -77,14 +77,15 @@ body.dark-mode a {
     margin: 0;
     padding: .25rem;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Great Vibes", serif;
     color: white;
     text-shadow: 2px 2px rgb(87, 87, 87);
 }
 
 .hero picture {
-    width: 100%;
+    width: 75%;
+    height: auto;
 }
 
 .hero img {
@@ -111,11 +112,11 @@ body.dark-mode a {
     content: "\00d7";
 }
 
-ul.navigation,
 ul.navigation.open {
     display: block;
     justify-content: center;
     font-size: 24px;
+    list-style-type: none;
 }
 
 ul.navigation a:hover {
@@ -142,10 +143,15 @@ ul.navigation li a {
 
 ul.navigation {
     display: none;
-    list-style-type: none;
 }
 
 main {
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.blocks {
     max-width: 1200px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -156,7 +162,6 @@ main {
 }
 
 main hr {
-    grid-column: 1/3;
     margin: 0px 1px;
 }
 
@@ -208,9 +213,13 @@ main li a {
 }
 
 .googlemap {
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 footer {
