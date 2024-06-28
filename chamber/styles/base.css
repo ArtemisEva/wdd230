@@ -13,7 +13,6 @@ header {
 }
 
 
-
 header div {
     display: flex;
     align-items: center;
@@ -191,6 +190,11 @@ main li a {
 
 .image div {
     margin: 1rem;
+}
+
+.demographics h1 {
+    margin: 1rem;
+    text-align: center;
 }
 
 .demographics h2 {
