@@ -59,6 +59,8 @@ body.dark-mode a {
 
 .calltoaction {
     text-align: center;
+    font-size: large;
+    gap: 20px;
 }
 
 .ctabutton {

@@ -16,7 +16,10 @@
         margin-bottom: 50px;
     }
 
-
+    .calltoaction {
+        font-size: x-large;
+        gap: 20px;
+    }
 
     #menu {
         display: none;
