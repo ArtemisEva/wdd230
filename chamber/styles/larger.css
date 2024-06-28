@@ -34,6 +34,11 @@
         flex-direction: column;
     }
 
+    .main h1 {
+        text-align: center;
+        margin: 0px 5px;
+    }
+
     main hr {
         margin: 0px 5px;
     }
