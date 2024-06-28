@@ -58,8 +58,11 @@ body.dark-mode a {
 }
 
 .calltoaction {
-    cursor: pointer;
+    text-align: center;
+}
 
+.ctabutton {
+    cursor: pointer;
 }
 
 #menu {
