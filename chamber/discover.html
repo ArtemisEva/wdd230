@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hamer Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Hamer Chamber of Commerce by Dan Evans. Portal: https://artemiseva.github.io/wdd230/chamber">
+    <meta name="author" content="Dan Evans">
+
+    <meta property="og:title" content="Hamer Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artemiseva.github.io/wdd230/images/hamer.jpg">
+    <meta property="og:image:width" content="510px">
+    <meta property="og:image:height" content="339px">
+    <meta property="og:url" content="https://artemiseva.github.io/wdd230/chamber">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <br>
+        <br>
+        <br>
+    </header>
+    <nav>
+        <button id="dark-mode-toggle">
+            <img src="images/dark.svg" alt="Dark mode" height="44" width="44">
+        </button>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="currentevents.html">Current Events</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="spotlight1.html">Spotlight1</a>
+            <li><a href="spotlight2.html">Spotlight2</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <main class="discover">
+            <section class="demographics">
+                <h1>Demographics</h1>
+                <h2>Population - 83 (2020)</h2>
+                <h2>Area - .19 square miles (0.49 km&sup2)</h2>
+                <h2>Household Income: $103,750 (2022)</h2>
+                <h2>Median Age: 61.5yrs (2022)</h2>
+                <h3><span id="visit-message">Back so soon! Awesome!</span></h3>
+            </section>
+            <section class="images">
+                <section class="image">
+                    <div>
+                        <picture>
+                            <img src="images/sign.webp" alt="Hamer Welcome Sign" loading="lazy" width="800"
+                                height="600">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Hamer Welcome Sign</h3>
+                        <br>
+                        <p>The Hamer Welcome Sign was introduced in the 1990's. It became a welcome landmark to local
+                            families. The saying would change on the season or event. Welcome to Hamer, Idaho!</p>
+                    </div>
+                </section>
+                <section class="image">
+                    <div>
+                        <picture>
+                            <img src="images/camas.webp" alt="Camas Wildlife Refuge" loading="lazy" width="800"
+                                height="600">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Camas Wildlife Refuge</h3>
+                        <br>
+                        <p>Camas National Wildlife Refuge provides vital habitat for a variety of migratory birds. Large
+                            and small mammals as well as several non-migratory bird species depend on the refuge for
+                            habitat.</p>
+                    </div>
+                </section>
+                <section class="image">
+                    <div>
+                        <picture>
+                            <img src="images/dome.webp" alt="Hamer's Iconic Monolithic Potato Cellar Dome"
+                                loading="lazy" width="800" height="600">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Hamer's Iconic Monolithic Potato Cellar Dome</h3>
+                        <br>
+                        <p>A 105-foot by 35-foot potato cellar in Hamer, Idaho, built in the early days of the industry.
+                            This dome lies right off the interstate (I-15) exit and serves as a landmark to the Hamer
+                            township.
+                        </p>
+                    </div>
+                </section>
+                <section class="image">
+                    <div>
+                        <picture>
+                            <img src="images/dunes.webp" alt="St. Anthony Sand Dunes" loading="lazy" width="800"
+                                height="600">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>St. Anthony Sand Dunes</h3>
+                        <br>
+                        <p>The St. Anthony Sand Dunes comprise more than 10,000 acres of quartz sand in the Snake River
+                            Plain in Idaho. The dunes can range from 10 feet tall to up to 400 feet tall. They are a
+                            popular destination in the summer for sand dune motorsports enthusiasts on ATVs and
+                            side-by-side UTVs. The dunes serve as a popular recreational activity for families in Hamer.
+                        </p>
+                    </div>
+                </section>
+                <section class="image">
+                    <div>
+                        <picture>
+                            <img src="images/farm.webp" alt="Hamer Farms" loading="lazy" width="800" height="600">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Hamer Farms</h3>
+                        <br>
+                        <p>The farming community in Hamer contrives many of the jobs for local populace. Many of the
+                            largest potato farms in America are found in or around Hamer, Idaho.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="ydate"></span></p>
+            <br>
+            <p>Dan Evans | WDD230</p>
+            <p>United States</p>
+            <p>Last modified: <span id="lastModifiedDate"></span></p>
+        </footer>
+        <script src="scripts/lastModified.js"></script>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/darkMode.js"></script>
+        <script src="scripts/visits.js"></script>
+</body>
+
+</html>
