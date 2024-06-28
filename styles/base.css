@@ -10,8 +10,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-header,
-footer {
+header {
     background-color: rgb(26, 52, 107);
     position: relative;
 }
@@ -67,15 +66,17 @@ body.dark-mode a {
 
 .herolabel {
     position: absolute;
-    bottom: 70%;
-    left: 20px;
-    right: 20px;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+
     background-color: rgba(255, 255, 255, 0.5);
     padding: 1rem;
     text-align: center;
 }
 
 .herolabel h1 {
+
     margin: 0;
     padding: .25rem;
     font-weight: 600;
@@ -150,9 +151,12 @@ ul.navigation {
 }
 
 main {
-    margin: 0 auto;
     gap: 10px;
+    display: block;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
 }
 
 .blocks {
@@ -170,7 +174,7 @@ main hr {
 }
 
 main h1 {
-
+    text-align: center;
     margin: 0px 1px;
 }
 
@@ -227,6 +231,8 @@ main li a {
 }
 
 footer {
+    background-color: rgb(26, 52, 107);
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;

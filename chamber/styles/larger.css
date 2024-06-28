@@ -5,16 +5,18 @@
         flex-direction: column;
     }
 
-    main {
-        max-width: 1200px;
+    .grid {
+        width: 90%;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         margin: 0 auto;
         gap: 10px;
         margin-top: 10px;
         margin-bottom: 50px;
     }
+
+
 
     #menu {
         display: none;
@@ -34,8 +36,15 @@
         flex-direction: column;
     }
 
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
     .main h1 {
-        text-align: center;
         margin: 0px 5px;
     }
 

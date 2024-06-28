@@ -57,6 +57,11 @@ body.dark-mode a {
     height: 44px;
 }
 
+.calltoaction {
+    cursor: pointer;
+
+}
+
 #menu {
     font-size: 2rem;
     border: none;
@@ -117,9 +122,12 @@ main hr {
     margin: 0px 1px;
 }
 
+#chambertitle {
+    text-align: center;
+}
+
 .main h1 {
     margin: 0px 1px;
-    text-align: center;
 }
 
 main .block {
@@ -187,10 +195,6 @@ main li a {
 .demographics h3 {
     margin: 1rem;
     text-align: center;
-}
-
-.discover section {
-    margin: 1rem;
 }
 
 .discover img {
