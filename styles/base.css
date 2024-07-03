@@ -124,6 +124,10 @@ ul.navigation.open {
     list-style-type: none;
 }
 
+nav .active {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
 ul.navigation a:hover {
     background-color: rgb(26, 52, 107);
     border: 3px solid black;
@@ -221,13 +225,16 @@ main li a {
 }
 
 .googlemap {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    gap: 10px;
-    margin-top: 10px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.googlemap iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
 footer {

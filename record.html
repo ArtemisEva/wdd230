@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dan Evans - WDD 230 - Web Frontend Development</title>
+
+    <meta name="description"
+        content="This is a portal for WDD 230 - Web Frontend Development, I will display the tasks for this course here. This page is made by Dan Evans.">
+    <meta name="author" content="Dan Evans">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artemiseva.github.io/wdd230/images/hamer.webp">
+    <meta property="og:image:width" content="510px">
+    <meta property="og:image:height" content="339px">
+    <meta property="og:url" content="https://artemiseva.github.io/wdd230">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/profile.webp" alt="Profile">
+            <span>Dan Evans</span>
+        </div>
+
+    </header>
+    <nav>
+        <button id="dark-mode-toggle">
+            <img src="images/dark.svg" alt="Dark mode" height="44" width="44">
+        </button>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <br>
+        <h1>Thank you for submitting your form!</h1>
+        <br>
+    </main>
+    <footer>
+        <p>&copy;<span id="ydate"></span></p>
+        <br>
+        <p>Dan Evans</p>
+        <p>United States</p>
+        <p>Last modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
+
+</body>
+
+</html>

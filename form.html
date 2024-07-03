@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="This is a form for WDD 230 - Web Frontend Development. This page is made by Dan Evans.">
+    <meta name="author" content="Dan Evans">
+    <title>Dan Evans - WDD 230 - Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development - Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artemiseva.github.io/wdd230/images/hamer.webp">
+    <meta property="og:image:width" content="510px">
+    <meta property="og:image:height" content="339px">
+    <meta property="og:url" content="https://artemiseva.github.io/wdd230">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/profile.webp" alt="Profile">
+            <span>Dan Evans</span>
+        </div>
+
+    </header>
+    <nav>
+        <button id="dark-mode-toggle">
+            <img src="images/dark.svg" alt="Dark mode" height="44" width="44">
+        </button>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="active"><a href="form.html">Form</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Page Rating</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend><b>Enter Login Information and Rate Page</b></legend>
+
+                <label class="first"> Username*<input type="text" id="id" name="id" required></label>
+
+                <label class="first">Password*
+                    <input type="text" id="password" name="password1"
+                        title="Password must be alpha-numeric only and at least 8 characters long"
+                        pattern="[a-zA-Z0-9]{8,}" placeholder="Alpha-numeric only / 8< characters" required>
+                </label>
+                <div id="feedback"></div>
+
+                <label class="first">Confirm Password*
+                    <input type="text" id="password2" name="password2"
+                        title="Password must be alpha-numeric only and at least 8 characters long"
+                        pattern="[a-zA-Z0-9]{8,}" placeholder="Alpha-numeric only / 8< characters" required>
+                </label>
+
+
+                <label class="first"> Email*<input type="email" name="email" placeholder="someone@byui.edu"
+                        pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid byui.edu email address"
+                        required></label>
+
+                <label class="first">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input class="first" type="range" id="r" name="r" min="0" max="10" value="0" step="1"
+                    list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+            </fieldset>
+
+            <input type="submit" value="Create Login" class="submit">
+        </form>
+
+
+    </main>
+    <footer>
+        <p>&copy;<span id="ydate"></span></p>
+        <br>
+        <p>Dan Evans</p>
+        <p>United States</p>
+        <p>Last modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+
+</body>
+
+</html>

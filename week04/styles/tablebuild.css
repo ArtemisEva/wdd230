@@ -1,0 +1,50 @@
+:root {
+    --back: rgb(26, 52, 107);
+    --foredark: black;
+    --forelight: white;
+    --border: black;
+    --borderlight: hsla(0, 0%, 48%, 0.452);
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+tr:first-child th,
+.highlight {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+thead tr th {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: darkgrey;
+    font-size: larger;
+}
