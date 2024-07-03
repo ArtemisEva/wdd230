@@ -351,6 +351,7 @@ form input.submit {
     margin: 0 0 2rem 3%;
     width: 96%;
     max-width: 26rem;
+    cursor: pointer;
 }
 
 form label.first input:required {
