@@ -52,10 +52,9 @@ form legend {
 form label.first,
 form div {
     display: block;
-    padding-first: 1rem;
+    padding: .2rem;
     color: #9c2c13;
     font-size: 0.8rem;
-
 }
 
 form label.first input,
@@ -94,7 +93,7 @@ form label.first input:required:valid {
 #feedback {
     color: var(--primary-color);
     display: block;
-    padding-first: 1rem;
+    padding: .2rem;
     color: #9c2c13;
     font-size: 1rem;
 }
