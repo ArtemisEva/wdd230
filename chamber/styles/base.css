@@ -211,6 +211,8 @@ main form h3 {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -360,22 +362,4 @@ form label.first input:required {
 
 form label.first input:required:valid {
     border-left: green solid 8px;
-}
-
-.side {
-    width: 80%;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    box-shadow: 0 0 10px var(--primary-color);
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--primary-color);
-}
-
-.side h2 {
-    text-align: center;
 }
