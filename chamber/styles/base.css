@@ -331,7 +331,8 @@ form div {
 }
 
 form label.first input,
-form label.first select {
+form label.first select,
+form textarea {
     margin-bottom: 1%;
     display: block;
     font-size: 1rem;
