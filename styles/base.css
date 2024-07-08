@@ -206,6 +206,31 @@ main .block p {
     color: rgb(0, 168, 8);
 }
 
+.card {
+    border: 1px solid navy;
+    background-color: rgb(211, 225, 255);
+    text-align: center;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.card h3 {
+    color: navy;
+    margin: 1rem 0;
+}
+
+.card #description {
+    text-transform: capitalize;
+    color: navy;
+    margin: .3rem 0;
+}
+
+.card #temperature {
+    font-size: 2rem;
+    color: navy;
+    margin: .3rem 0;
+}
+
 main h2 {
     background-color: rgb(26, 52, 107);
     text-align: center;

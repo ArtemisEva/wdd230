@@ -1,0 +1,7 @@
+li::marker {
+    color: red;
+}
+
+p::first-letter {
+    color: green;
+}
