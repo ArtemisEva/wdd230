@@ -9,7 +9,6 @@ const myLon = -112.206110
 
 const myURL = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`
 
-
 async function apiFetch() {
     try {
         const response = await fetch(myURL);
@@ -23,8 +22,6 @@ async function apiFetch() {
         console.log(error)
     }
 }
-
-
 
 function displayResults(data) {
     myTown.innerHTML = data.name

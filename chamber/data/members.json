@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Utah State Bar",
+            "address": "645 S 200 E, Hamer, ID, USA",
+            "phone": "801.531.9077",
+            "website": "https://www.utahbar.org",
+            "image": "images/utahbar.webp",
+            "membershiplevel": "Non-Profit",
+            "otherinfo": "Government Agency"
+        },
+        {
+            "name": "Parsons Behle & Latimer",
+            "address": "201 S Main St #1800, Hamer, ID, USA",
+            "phone": "801.532.1234",
+            "website": "https://www.parsonsbehle.com",
+            "image": "images/parsons.webp",
+            "membershiplevel": "Gold",
+            "otherinfo": "Law Firm"
+        },
+        {
+            "name": "Spencer Fane",
+            "address": "10 Exchange Pl 11th Floor, Hamer, ID, USA",
+            "phone": "801.521.9000",
+            "website": "https://www.spencerfane.com",
+            "image": "images/spencer.webp",
+            "membershiplevel": "Bronze",
+            "otherinfo": "Law Firm"
+        },
+        {
+            "name": "Maschoff Brennan",
+            "address": "95 S State St Suite 800, Hamer, ID, USA",
+            "phone": "801.297.1850",
+            "website": "https://www.mabr.com",
+            "image": "images/mabr.webp",
+            "membershiplevel": "Gold",
+            "otherinfo": "Law Firm"
+        },
+        {
+            "name": "Stoel Rives LLP",
+            "address": "201 S. Main St #1200, Hamer, ID, USA",
+            "phone": "801.328-3131",
+            "website": "https://www.stoel.com",
+            "image": "images/stoel.webp",
+            "membershiplevel": "bronze",
+            "otherinfo": "Law Firm"
+        },
+        {
+            "name": "Strong & Hanni PC",
+            "address": "102 S 200 E STE 800, Hamer, ID, USA",
+            "phone": "801.532.7080",
+            "website": "https://www.strongandhanni.com",
+            "image": "images/strong.webp",
+            "membershiplevel": "Silver",
+            "otherinfo": "Law Firm"
+        },
+        {
+            "name": "Holland & Hart LLP",
+            "address": "222 S Main St Suite 2200, Hamer, ID, USA",
+            "phone": "801.799.5800",
+            "website": "https://www.hollandhart.com",
+            "image": "images/holland.webp",
+            "membershiplevel": "Bronze",
+            "otherinfo": "Law Firm"
+        }
+    ]
+}
