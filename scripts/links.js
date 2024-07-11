@@ -15,7 +15,7 @@ function displayLinks(weeks) {
         const td = document.createElement("td");
         const ltd = document.createElement("td");
         const weekLabel = document.createElement("span");
-        weekLabel.textContent = `${week.week}:`;
+        weekLabel.textContent = `${week.week}`;
         td.appendChild(weekLabel)
         week.links.forEach((link, index) => {
             const a = document.createElement("a");
