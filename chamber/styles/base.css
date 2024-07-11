@@ -380,18 +380,24 @@ form label.first input:required:valid {
 
 .list section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
-
     padding: 0.25rem;
     border: black;
+
 }
 
 
 .list h2 {
-    background-color: black;
-    min-width: 30%;
+    background-color: var(--primary-color);
+    min-width: 25%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
+
+/*.list p {
+    text-align: center;
+}*/
 
 .list section img {
     display: none;

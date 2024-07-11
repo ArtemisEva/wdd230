@@ -87,12 +87,15 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .list {
+    .list section {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         margin: auto;
-        margin-right: 0;
+        gap: 20px;
+        min-width: 95%;
+        margin-right: auto;
     }
 
     main .cards {
