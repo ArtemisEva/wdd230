@@ -378,18 +378,24 @@ form label.first input:required:valid {
     text-align: center;
 }
 
-.grid img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
+.grid-directory {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .list section {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    margin: 0;
+
     padding: 0.25rem;
     border: black;
+}
+
+
+.list h2 {
+    background-color: black;
+    min-width: 30%;
 }
 
 .list section img {

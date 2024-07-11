@@ -39,6 +39,9 @@ const displayMembers = (members) => {
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "400");
         image.setAttribute("height", "400");
+        image.setAttribute("border", "2px solid black");
+        image.setAttribute("box-shadow", "0 0 10px");
+
 
         memberName.textContent = `${member.name}`;
         membership.textContent = `Membership: ${member.membershiplevel}`;
