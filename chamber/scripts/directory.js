@@ -31,6 +31,7 @@ const displayMembers = (members) => {
         let image = document.createElement("img");
         let otherinfo = document.createElement("h4");
         let address = document.createElement("p");
+        let phone = document.createElement("p");
         let website = document.createElement("a");
         let membership = document.createElement("h4");
 
@@ -49,12 +50,14 @@ const displayMembers = (members) => {
         address.textContent = `${member.address}`;
         website.setAttribute("href", `${member.website}`);
         website.textContent = member.website;
+        phone.textContent = `${member.phone}`;
 
         card.appendChild(memberName);
         card.appendChild(image);
         card.appendChild(membership);
         card.appendChild(otherinfo);
         card.appendChild(address);
+        card.appendChild(phone);
 
         card.appendChild(website);
 

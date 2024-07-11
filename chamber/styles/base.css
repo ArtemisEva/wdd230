@@ -378,11 +378,6 @@ form label.first input:required:valid {
     text-align: center;
 }
 
-.grid-directory {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 .list section {
     display: flex;
     flex-direction: row;
