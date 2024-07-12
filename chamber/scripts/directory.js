@@ -11,6 +11,7 @@ async function getMemberData() {
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
+display.classList.add("grid");
 
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
@@ -43,8 +44,6 @@ const displayMembers = (members) => {
         image.setAttribute("border", "2px solid black");
         image.setAttribute("box-shadow", "0 0 10px");
 
-
-
         memberName.textContent = `${member.name}`;
         membership.textContent = `Membership: ${member.membershiplevel}`;
         otherinfo.textContent = `${member.otherinfo}`;
@@ -59,13 +58,16 @@ const displayMembers = (members) => {
         card.appendChild(phone);
         card.appendChild(membership);
         card.appendChild(otherinfo);
-
-
         card.appendChild(website);
 
         cards.appendChild(card);
     });
 };
+
+window.addEventListener("load", function () {
+    getMemberData();
+});
+
 getMemberData();
 
 
