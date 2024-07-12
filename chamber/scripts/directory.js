@@ -44,6 +44,7 @@ const displayMembers = (members) => {
         image.setAttribute("box-shadow", "0 0 10px");
 
 
+
         memberName.textContent = `${member.name}`;
         membership.textContent = `Membership: ${member.membershiplevel}`;
         otherinfo.textContent = `${member.otherinfo}`;
@@ -54,10 +55,11 @@ const displayMembers = (members) => {
 
         card.appendChild(memberName);
         card.appendChild(image);
-        card.appendChild(membership);
-        card.appendChild(otherinfo);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(membership);
+        card.appendChild(otherinfo);
+
 
         card.appendChild(website);
 

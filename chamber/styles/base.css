@@ -35,7 +35,7 @@ header div {
     align-items: center;
     display: block;
     margin: auto;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -247,6 +247,10 @@ main li a {
 
 .demographics h2 {
     margin: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .demographics h3 {
@@ -374,8 +378,45 @@ form label.first input:required:valid {
     font-size: 2rem;
 }
 
-.grid section {
+.maingrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.griddir {
+    display: grid;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+#cards h2 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#cards section {
+    background: transparent;
+    border-style: solid;
+    border-width: 4px 4px 4px 4px;
+    border-color: var(--primary-color);
+    border-radius: 0.3rem;
+    padding-bottom: 10px;
 }
 
 .list section {
@@ -384,20 +425,7 @@ form label.first input:required:valid {
     text-align: center;
     padding: 0.25rem;
     border: black;
-
 }
-
-
-.list h2 {
-    background-color: var(--primary-color);
-    min-width: 25%;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-
-/*.list p {
-    text-align: center;
-}*/
 
 .list section img {
     display: none;
@@ -405,4 +433,12 @@ form label.first input:required:valid {
 
 .list section:nth-child(even) {
     background-color: rgb(228, 228, 228);
+}
+
+.list p,
+.list h4,
+.list a {
+    text-align: center;
+    padding: 5px;
+
 }

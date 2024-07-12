@@ -5,15 +5,6 @@
         flex-direction: column;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        margin: 0 auto;
-        gap: 10px;
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
 
     .calltoaction {
         font-size: x-large;
@@ -57,7 +48,7 @@
         gap: 10px;
     }
 
-    .main h1 {
+    .main .chamber h1 {
         margin: 0px 5px;
     }
 
@@ -65,7 +56,7 @@
         margin: 0px 5px;
     }
 
-    .block {
+    main .block {
         margin: 5px 5px;
     }
 
@@ -75,10 +66,20 @@
 
     .discover img:hover {
         box-shadow: 0 0 50px #333;
-
     }
 
     footer {
+        text-align: center;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin: 0 auto;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 50px;
         text-align: center;
     }
 
@@ -96,10 +97,14 @@
         gap: 20px;
         min-width: 95%;
         margin-right: auto;
+        padding-top: 10px;
     }
 
-    main .cards {
-        display: flex;
+    .list h2 {
+        background-color: var(--primary-color);
+        text-align: center;
+        color: var(--tertiary-color);
+        min-width: 25%;
     }
 
 }
