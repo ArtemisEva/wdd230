@@ -4,6 +4,7 @@ const cards = document.querySelector("#cards");
 async function getMemberData() {
     const response = await fetch(memjson);
     const data = await response.json();
+    display.classList.add("grid");
     console.log(data);
     displayMembers(data.members);
 }
@@ -11,7 +12,7 @@ async function getMemberData() {
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
-display.classList.add("grid");
+
 
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
@@ -59,15 +60,8 @@ const displayMembers = (members) => {
         card.appendChild(membership);
         card.appendChild(otherinfo);
         card.appendChild(website);
-
         cards.appendChild(card);
     });
 };
-
-window.addEventListener("load", function () {
-    getMemberData();
-});
-
-getMemberData();
 
 

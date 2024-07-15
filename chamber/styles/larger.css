@@ -74,26 +74,20 @@
 
     .maingrid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        margin: 0 auto;
+        grid-template-columns: 2fr .5fr;
         gap: 10px;
-        margin-top: 10px;
-        margin-bottom: 50px;
         text-align: center;
     }
 
     .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
     .list section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
+        max-width: 100%;
         gap: 20px;
         min-width: 95%;
         margin-right: auto;
