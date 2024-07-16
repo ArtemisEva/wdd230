@@ -1,4 +1,4 @@
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 1100px) {
 
     header {
         display: flex;
@@ -38,6 +38,11 @@
     header div {
         margin-top: 5px;
         flex-direction: column;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .discover {

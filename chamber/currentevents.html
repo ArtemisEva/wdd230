@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hamer Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 230 - Hamer Chamber of Commerce by Dan Evans. Portal: https://artemiseva.github.io/wdd230/chamber">
+    <meta name="author" content="Dan Evans">
+
+    <meta property="og:title" content="Hamer Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://artemiseva.github.io/wdd230/images/hamer.jpg">
+    <meta property="og:image:width" content="510px">
+    <meta property="og:image:height" content="339px">
+    <meta property="og:url" content="https://artemiseva.github.io/wdd230/chamber">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <br>
+        <br>
+        <br>
+    </header>
+    <nav>
+        <button id="dark-mode-toggle">
+            <img src="images/dark.svg" alt="Dark mode" height="44" width="44">
+        </button>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="currentevents.html">Current Events</a></li>
+            <li><a href="directory.html">Directory</a></li>
+
+        </ul>
+    </nav>
+    <main class="currentevents">
+        <h2>LUNCH WITH GOVERNOR BRAD LITTLE</h2>
+        <br>
+        <h3>July 30 @ 11:00 am - 1:00 pm</h3>
+        <br>
+        <h3>Location: The Westbank</h3>
+
+        <p>We are pleased to host Governor Brad Little July 30th, 12pm at the Westbank Convention Center, Idaho Falls.
+            We plan to discuss topics including Water Curtailment, Education, The Economy, the upcoming Legislative
+            Session
+            and a variety of other hot topics.</p>
+
+        <br>
+
+        <h2>RIBBON CUTTING FOR 1ST CHOICE URGENT CARE & FAMILY MEDICINE</h2>
+        <br>
+        <h3>August 16 @ 12:00 pm - 1:30 pm</h3>
+        <br>
+
+        <h3>Location: 1st Choice Urgent Care 3302 Valencia Dr. Ste. 120, Idaho Falls, Idaho</h3>
+        <p>Join us at the Ribbon Cutting for 1st Choice Urgent Care & Family Medicine!</p>
+        <br>
+        <h2> LEADERSHIP CLASS SERVICE PROJECT</h2>
+        <br>
+        <h3> May 31 @ 9:30 am - 7:00 pm</h3>
+        <br>
+        <h3>Location: Snake River Animal Shelter 3000 Lindsay Blvd, Idaho Falls, Idaho</h3>
+        <p> The public is welcome to assist the Chamber Leadership Class in their Service Project! We will be planting
+            flowers, weeding, dog walking, brushing cats, cleaning the facility, and much more!...</p>
+    </main>
+    <footer>
+        <p>&copy;<span id="ydate"></span></p>
+        <br>
+        <p>Dan Evans | WDD230</p>
+        <p>United States</p>
+        <p>Last modified: <span id="lastModifiedDate"></span></p>
+
+
+
+    </footer>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+
+</html>

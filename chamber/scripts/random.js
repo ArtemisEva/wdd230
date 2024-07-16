@@ -1,48 +1,68 @@
-const memjson = "data/members.json";
-const randcards = document.querySelector("#ranCards");
-
-async function getMemberData() {
-    const response = await fetch(memjson);
-    const data = await response.json();
-    display.classList.add("randomCompany1");
-    console.log(data);
-    displayMembers(data.members);
+async function getSpotLightMembers() {
+    const dataURL = "data/members.json";
+    try {
+        const response = await fetch(dataURL);
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
+        }
+        const data2 = await response.json();
+        displaySpotlightMembers(data2.members);
+        return data2;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        throw error;
+    }
 }
 
-const randomCompany1 = document.querySelector[Math.floor(Math.random() * data.name.length)];
-const randomCompany2 = document.querySelector[Math.floor(Math.random() * data.name.length)];
+function displaySpotlightMembers(members) {
 
+    const spotlights = document.querySelector(".cards");
 
-const displayMembers = (members) => {
-    members.forEach((member) => {
-        let rancard = document.createElement("li");
-        let card = document.createElement("section");
-        let memberName = document.createElement("h2");
-        let otherinfo = document.createElement("h4");
-        let address = document.createElement("p");
-        let phone = document.createElement("p");
-        let website = document.createElement("a");
-        let membership = document.createElement("h4");
+    let spotlightmembers = members.filter((member) => member.membershiplevel === "Silver" || member.membershiplevel === "Gold");
+    let randmembers = spotlightmembers.sort(() => 0.5 - Math.random()).slice(0, 4);
 
+    randmembers.forEach((member) => {
+        const spotlight = document.createElement("article");
+        spotlight.classList.add("card");
 
+        let status = member.membershiplevel === "Silver" ? "silver" : "gold";
 
-        memberName.textContent = `${member.name}`;
-        membership.textContent = `Membership: ${member.membershiplevel}`;
-        otherinfo.textContent = `${member.otherinfo}`;
-        address.textContent = `${member.address}`;
-        website.setAttribute("href", `${member.website}`);
-        website.textContent = member.website;
-        phone.textContent = `${member.phone}`;
+        spotlight.innerHTML = `
+        <h3 class="card-header ${status}">${member.membershiplevel} Member</h3>
+        <div class="card-body">
+        <img src="${member.image}" alt="${member.name.toLowerCase()}-image" loading="lazy" width=75 height=auto>
+        <div class="contact-info">
+            <address>
+            <h4>${member.name}</h4>
+        
+                ${member.address}
+            </address>
+            <div>
+                <a href=${member.website} target="_blank">${member.website}</a>
+            </div>
+        </div>
+        </div>
+    `;
 
-        rancard.appendChild(memberName);
-        rancard.appendChild(address);
-        rancard.appendChild(phone);
-        rancard.appendChild(membership);
-        rancard.appendChild(otherinfo);
-        rancard.appendChild(website);
-        randcards.appendChild(card);
+        spotlights.appendChild(spotlight);
     });
-    getMemberData();
-};
+}
 
+getSpotLightMembers();
 
+/* Banner*/
+
+function banner() {
+    let banner = document.querySelector(".banner");
+    let closebanner = document.querySelector("#close");
+    var today = new Date();
+    var dow = today.getDay();
+    var visiblebanner = dow >= 1 && dow <= 3;
+    banner.classList.toggle("banner", visiblebanner);
+    banner.classList.toggle("bannerhide", !visiblebanner);
+    closebanner.addEventListener("click", function () {
+        banner.classList.add("bannerhide");
+    });
+}
+
+banner();

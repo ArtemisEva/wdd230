@@ -2,6 +2,7 @@
     --primary-color: rgb(26, 52, 107);
     --secondary-color: rgb(48, 102, 219);
     --tertiary-color: white;
+    --background-color: rgb(211, 225, 255);
     --hover-color: rgb(0, 168, 8);
     --form-color: #9c2c13;
     --font-family: 'Arial', sans-serif;
@@ -140,11 +141,6 @@ main {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-
-}
-
-main hr {
-    margin: 0px 1px;
 }
 
 #chambertitle {
@@ -156,13 +152,8 @@ main hr {
 }
 
 main .block {
-    box-shadow: 1px 1px 10px black;
-    border-radius: 6px;
-    margin: 4px 1px;
-}
 
-main .block ul {
-    padding: 10px 20px 10px;
+    margin: 4px 1px;
 }
 
 main .block p {
@@ -381,7 +372,6 @@ form label.first input:required:valid {
 .maingrid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 10px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -406,14 +396,14 @@ form label.first input:required:valid {
 .weather {
     display: grid;
     grid-template-columns: 3fr;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 5px;
+    margin-bottom: auto;
     text-align: center;
 }
 
 .card {
     border: 1px solid var(--primary-color);
-    background-color: rgb(211, 225, 255);
+    background-color: var(--background-color);
     text-align: center;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -431,7 +421,6 @@ form label.first input:required:valid {
 .card #description4 {
     text-transform: capitalize;
     color: var(--primary-color);
-    margin: .3rem 0;
     font-weight: bold;
 }
 
@@ -441,7 +430,13 @@ form label.first input:required:valid {
 .card #temperature4 {
     font-size: 2rem;
     color: var(--primary-color);
-    margin: .3rem 0;
+}
+
+.cards {
+    margin-top: -2%;
+    grid-gap: 10px;
+    flex: 1;
+    max-width: 100%;
 }
 
 #cards h2 {
@@ -485,4 +480,55 @@ form label.first input:required:valid {
     text-align: center;
     grid-column: 3/4;
     grid-row: 3/4;
+}
+
+.spotlights {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Banner on home page */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.banner p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.bannerhide {
+    display: none;
+}
+
+#close {
+    background: none;
+    color: var(--tertiary-color);
+    border: none;
+
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.currentevents {
+    text-align: center;
+    padding: 1em;
+
+}
+
+.currentevents h2 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }

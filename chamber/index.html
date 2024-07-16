@@ -42,14 +42,16 @@
             <li><a href="discover.html">Discover</a></li>
             <li><a href="currentevents.html">Current Events</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="spotlight1.html">Spotlight1</a>
-            <li><a href="spotlight2.html">Spotlight2</a>
-            </li>
+
         </ul>
     </nav>
     <main class="mainchamber">
         <h1 id="chambertitle">Welcome to the Hamer Chamber of Commerce</h1>
-
+        <div class="banner">
+            <p>Join us Wednesday at 7:00 pm for the Hamer Chamber of Commerce meet and greet! Visitor and all members
+                are welcome.</p>
+            <button type="button" id="close">❌</button>
+        </div>
         <section class="maingrid">
             <section id="currentevents" class="block">
                 <div class="hero">
@@ -57,41 +59,41 @@
                         <img id="heroimage" src="images/hero.jpg" alt="hero image">
                     </picture>
                 </div>
-                <ul id="ranCards">
-
-                </ul>
+                <br>
+                <h2>Member Spotlight</h2>
+                <div class="spotlights">
+                    <div class="cards"></div>
+                </div>
             </section>
 
             <section class="weather">
-                <h2>Hamer Weather</h2>
+                <h2>Current Weather in Hamer</h2>
                 <div class="card">
-                    <h3><span id="day"></span>Today</h3>
                     <img id="graphic" src="images/weatherplaceholder.webp" alt="weather icon">
                     <p id="description"></p>
                     <p id="temperature"></p>
+                    <br>
                 </div>
-
+                <br>
                 <section id="threeday">
                     <h2>3-Day Forecast</h2>
                     <div class="card">
 
-                        <h3><span id="day1"></span> </h3>
+                        <h3><span id="day1">day1</span> </h3>
                         <img id="graphic2" src="images/weatherplaceholder.webp" alt="weather icon">
                         <p id="description2"></p>
                         <p id="temperature2"></p>
                         <br>
-                    </div>
-                    <div class="card">
+                        <hr>
 
-                        <h3><span id="day2"></span> </h3>
+                        <h3><span id="day2">day2</span> </h3>
                         <img id="graphic3" src="images/weatherplaceholder.webp" alt="weather icon">
                         <p id="description3"></p>
                         <p id="temperature3"></p>
                         <br>
-                    </div>
-                    <div class="card">
+                        <hr>
 
-                        <h3><span id="day3"></span> </h3>
+                        <h3><span id="day3">day3</span> </h3>
                         <img id="graphic4" src="images/weatherplaceholder.webp" alt="weather icon">
                         <p id="description4"></p>
                         <p id="temperature4"></p>
@@ -104,7 +106,8 @@
                     <button onclick="location.href='Join.html';" class="ctabutton">Join Hamer Chamber of Commerce
                         Today!</button>
                 </div>
-
+            </section>
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="ydate"></span></p>
@@ -118,6 +121,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/random.js"></script>
 </body>
 
 </html>

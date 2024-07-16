@@ -30,6 +30,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
+            //       console.log(data);
         } else {
             throw Error(await response.text());
         }
@@ -47,23 +48,23 @@ function displayResults(data) {
 }
 
 function displayForecast(data) {
-    myDescription2.innerHTML = data.list[6].weather[0].description
-    myTemperature2.innerHTML = `${data.list[6].main.temp.toFixed(1)}&deg;F`;
+    myDescription2.innerHTML = data.list[7].weather[0].description
+    myTemperature2.innerHTML = `${data.list[7].main.temp.toFixed(1)}&deg;F`;
     const iconsrc2 = `https://openweathermap.org/img/wn/${data.list[6].weather[0].icon}@2x.png`;
     myGraphic2.setAttribute("src", iconsrc2);
-    myGraphic2.setAttribute("alt", data.list[6].weather[0].description);
+    myGraphic2.setAttribute("alt", data.list[7].weather[0].description);
 
-    myDescription3.innerHTML = data.list[14].weather[0].description
-    myTemperature3.innerHTML = `${data.list[14].main.temp.toFixed(1)}&deg;F`;
+    myDescription3.innerHTML = data.list[15].weather[0].description
+    myTemperature3.innerHTML = `${data.list[15].main.temp.toFixed(1)}&deg;F`;
     const iconsrc3 = `https://openweathermap.org/img/wn/${data.list[14].weather[0].icon}@2x.png`;
     myGraphic3.setAttribute("src", iconsrc3);
-    myGraphic3.setAttribute("alt", data.list[14].weather[0].description);
+    myGraphic3.setAttribute("alt", data.list[15].weather[0].description);
 
-    myDescription4.innerHTML = data.list[22].weather[0].description;
-    myTemperature4.innerHTML = `${data.list[22].main.temp.toFixed(1)}&deg;F`;
+    myDescription4.innerHTML = data.list[23].weather[0].description;
+    myTemperature4.innerHTML = `${data.list[23].main.temp.toFixed(1)}&deg;F`;
     const iconsrc4 = `https://openweathermap.org/img/wn/${data.list[22].weather[0].icon}@2x.png`;
     myGraphic4.setAttribute("src", iconsrc4);
-    myGraphic4.setAttribute("alt", data.list[22].weather[0].description);
+    myGraphic4.setAttribute("alt", data.list[23].weather[0].description);
 
 }
 
